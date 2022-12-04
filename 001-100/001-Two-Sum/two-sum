@@ -1,0 +1,13 @@
+func twoSum(nums []int, target int) []int {
+
+	// 0(n2)
+	for i, left := range(nums) {
+		for j, right := range(nums){
+			if left + right == target && i != j {
+				return []int{i,j}
+			}
+		}
+
+	}
+	return nil
+}
